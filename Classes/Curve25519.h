@@ -16,6 +16,7 @@
 }
 
 -(NSData*) publicKey;
+-(NSData*) privateKey;
 
 @end
 

@@ -1,22 +1,35 @@
 {
   "name": "Curve25519Kit",
-  "version": "0.1.0",
-  "summary": "A short description of Curve25519Kit.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/ET0423WWW@163.com/Curve25519Kit",
+  "version": "2.0.2",
   "license": {
-    "type": "MIT",
-    "file": "LICENSE"
+    "type": "GPLv3"
   },
+  "homepage": "https://github.com/feifu2023/Curve25519Kit",
+  "preserve_paths": "Sources/ed25519/**/*.{c,h}",
   "authors": {
-    "ET0423WWW@163.com": "et0423www@163.com"
+    "Frederic Jacobs": "github@fredericjacobs.com"
   },
+  "summary": "Key agreement (curve25519) and signing (ed25519), all with curve25519 keys.",
+  "description": "Curve25519 is a fast and secure curve used for key agreement. Unfortunately, it does not support signing out of the box. This pod translates the point curves to do ed25519 signing with curve25519 keys.",
   "source": {
-    "git": "https://github.com/ET0423WWW@163.com/Curve25519Kit.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/feifu2023/Curve25519Kit.git",
+    "tag": "2.0.2"
   },
+  "source_files": [
+    "Classes/*.{h,m}",
+    "Sources/Curve25519/curve25519-donna.c",
+    "Sources/ed25519/*.{c,h}",
+    "Sources/ed25519/additions/*.{c,h}",
+    "Sources/ed25519/nacl_sha512/*.{c,h}",
+    "Sources/ed25519/nacl_includes/*.{c,h}"
+  ],
+  "frameworks": "Security",
+  "public_header_files": "Classes/*.h",
+  "requires_arc": true,
   "platforms": {
-    "ios": "10.0"
-  },
-  "source_files": "Curve25519Kit/Classes/**/*"
+    "osx": null,
+    "ios": null,
+    "tvos": null,
+    "watchos": null
+  }
 }

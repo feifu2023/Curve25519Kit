@@ -73,6 +73,10 @@ extern int  curve25519_sign(unsigned char* signature_out, /* 64 bytes */
     return [NSData dataWithBytes:self->publicKey length:32];
 }
 
+-(NSData*) privateKey {
+    return [NSData dataWithBytes:self->privateKey length:32];
+}
+
 -(NSData*) sign:(NSData*)data{
     Byte signatureBuffer[ECCSignatureLength];
     NSData *randomBytes = [Randomness generateRandomBytes:64];
