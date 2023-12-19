@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |spec|
-  spec.name         = 'Curve25519Kit'
+  spec.name         = 'ETCurve25519Kit'
   spec.version      = '2.0.2'
   spec.license      = { :type => 'GPLv3' }
   spec.homepage     = 'https://github.com/feifu2023/Curve25519Kit'
