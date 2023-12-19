@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = 'ETCurve25519Kit'
-  spec.version      = '2.0.2'
+  spec.version      = '2.0.3'
   spec.license      = { :type => 'GPLv3' }
   spec.homepage     = 'https://github.com/feifu2023/Curve25519Kit'
   spec.preserve_path = 'Sources/ed25519/**/*.{c,h}'
